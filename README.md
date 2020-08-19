@@ -25,4 +25,4 @@ docker-compose up -d --build sui
 ```
 ![SUI](https://i.imgur.com/sTzMdMH.png)
 
-Creates a Container which runs [jeroenpardon](https://github.com/jeroenpardon) [SUI](https://github.com/jeroenpardon/sui), with [httpd:alpine](https://hub.docker.com/_/httpd) as the base image, as seen on https://imgur.com/a/FDVRIyw
+Creates a Container which runs [jeroenpardon's](https://github.com/jeroenpardon) [SUI](https://github.com/jeroenpardon/sui), with [httpd:alpine](https://hub.docker.com/_/httpd) as the base image, as seen on https://imgur.com/a/FDVRIyw
