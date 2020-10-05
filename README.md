@@ -14,11 +14,11 @@ Creates a Container which runs [jeroenpardon](https://github.com/jeroenpardon) [
 ```
 ### Deploy on Rasbperry Pi
 Using the Dockerfile, this container can be built and run on a Raspberry Pi, too! I've tested it on a Raspberry Pi 3B+.
-Simply put the Dockerfile in the same directory as your docker-compose.yml, edit your docker-compose.yml:
+Simply put the Dockerfile in a directory called `SUI` in the same directory as your docker-compose.yml, edit your docker-compose.yml:
 ```
   sui:
     container_name: sui
-    build: ./
+    build: ./SUI/
     restart: unless-stopped
     ports:
       - 80:80
