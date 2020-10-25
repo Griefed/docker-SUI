@@ -8,7 +8,7 @@ https://github.com/jeroenpardon/sui in a container!
 ![GitHub Repo stars](https://img.shields.io/github/stars/Griefed/docker-SUI?label=GitHub%20Stars&style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Griefed/docker-SUI?label=GitHub%20Forks&style=social)
 
-Creates a Container which runs [jeroenpardon](https://github.com/jeroenpardon) [SUI](https://github.com/jeroenpardon/sui), with [httpd:alpine](https://hub.docker.com/_/httpd) as the base image, as seen on https://imgur.com/a/FDVRIyw
+Creates a Container which runs [jeroenpardon's](https://github.com/jeroenpardon) [SUI](https://github.com/jeroenpardon/sui), with [httpd:alpine](https://hub.docker.com/_/httpd) as the base image, as seen on https://imgur.com/a/FDVRIyw
 
 # Deploy with docker-compose:
 ```
