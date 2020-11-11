@@ -1,5 +1,7 @@
 export GITHUB_REPONAME='docker-SUI'
 export GITHUB_USERNAME='Griefed'
+export GITHUB_REPONAME_header='docker-SUI_header.png'
+export GITHUB_REPONAME_screenshot='docker-SUI_screenshot.png'
 export DOCKERHUB_REPONAME='sui'
 export DOCKERHUB_TAG='latest'
 export DOCKERHUB_USERNAME='griefed'
