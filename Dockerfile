@@ -1,16 +1,20 @@
-FROM httpd:alpine
+FROM lsiobase/nginx:3.12
 
 LABEL maintainer="Griefed <griefed@griefed.de>"
 
-RUN apk update                                                  && \
-    apk upgrade                                                 && \
-    apk add --no-cache git                                      && \
-    cd /usr/local/apache2/htdocs/                               && \
-    rm -rf ./*                                                  && \
-    git clone https://github.com/jeroenpardon/sui.git ./        && \
-    rm Dockerfile docker-compose.yml                            && \
-    rm -rf /var/cache/apk/*
+RUN \
+    echo "**** Install dependencies, build tools and stuff ****" && \
+    apk add --no-cache \
+      git && \
+    echo "**** Cleanup ****" && \
+    rm -rf \
+      /root/.cache \
+      /tmp/*
 
-WORKDIR /usr/local/apache2/htdocs
+# Copy local files
+COPY root/ /
 
-EXPOSE 80
+# Communicate ports and volumes to be used
+EXPOSE 80 443
+
+VOLUME /config
