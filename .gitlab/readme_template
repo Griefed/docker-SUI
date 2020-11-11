@@ -39,6 +39,8 @@ services:
       - TZ=Europe/Berlin
       - PUID=1000  # User ID
       - PGID=1000  # Group ID
+      - DOMAIN=www.example.com
+      - PROTOCOL=https
     ports:
       - 80:$CONTAINER_PORT
       - $CONTAINER_PORT2
@@ -60,6 +62,8 @@ data volume | Contains your/the containers important data.
 TZ | Timezone
 PUID | for UserID
 PGID | for GroupID
+DOMAIN | The address of the device this container is running on. Can be an IP or sub.domain.tld.
+PROTOCOL | The protocol used to access this container. Either HTTP or HTTPS.
 ports | The port where the service will be available at.
 
 ## User / Group Identifiers
