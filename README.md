@@ -98,6 +98,8 @@ services:
       - TZ=Europe/Berlin
       - PUID=1000  # User ID
       - PGID=1000  # Group ID
+      - DOMAIN=www.example.com
+      - PROTOCOL=https
     ports:
       - 8080:80
       - 443:443
