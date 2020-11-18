@@ -1,4 +1,4 @@
-[![docker-SUI](img/docker-SUI_header.png)](https://github.com/jeroenpardon/sui)
+[![docker-SUI](img/docker-SUI_header.png)](https://github.com/Griefed/docker-SUI)
 
 ---
 
@@ -17,9 +17,9 @@ A startpage for your server and / or new tab page
 
 ---
 
-Creates a Container which runs [jeroenpardon's](https://github.com/jeroenpardon) [sui](https://github.com/jeroenpardon/sui), with [lsiobase/](https://hub.docker.com/r/lsiobase/) as the base image, as seen on https://imgur.com/a/FDVRIyw.
+Creates a Container which runs [jeroenpardon's](https://github.com/jeroenpardon) [sui](https://github.com/jeroenpardon/sui), with [lsiobase/nginx](https://hub.docker.com/r/lsiobase/nginx) as the base image, as seen on https://imgur.com/a/FDVRIyw.
 
-The lsiobase/ image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
+The [lsiobase/nginx](https://hub.docker.com/r/lsiobase/nginx) image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
 Using this image allows us to use the same user/group ids in the container as on the host, making file transfers much easier
 
 ## Deployment
