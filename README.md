@@ -1,4 +1,4 @@
-[![docker-SUI](img/docker-SUI_header.png)](https://github.com/Griefed/docker-SUI)
+[![docker-SUI](https://i.griefed.de/images/2020/11/18/docker-SUI_header.png)](https://github.com/Griefed/docker-SUI)
 
 ---
 
@@ -13,7 +13,7 @@ docker-SUI
 
 A startpage for your server and / or new tab page
 
-[![sui](img/docker-SUI_screenshot.png)](https://github.com/jeroenpardon/sui)
+[![sui](https://i.griefed.de/images/2020/11/18/docker-SUI_screenshot.png)](https://github.com/jeroenpardon/sui)
 
 ---
 
