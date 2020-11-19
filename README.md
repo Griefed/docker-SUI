@@ -1,4 +1,4 @@
-[![docker-SUI](https://i.griefed.de/images/2020/11/18/docker-SUI_header.png)](https://github.com/Griefed/docker-SUI)
+[![docker-SUI](https://i.griefed.de/images/2020/11/19/docker-SUI_Dashboard_header.png)](https://github.com/Griefed/docker-SUI/tree/lsiobase/nginx-dashboard)
 
 ---
 
@@ -65,6 +65,64 @@ PGID | for GroupID
 DOMAIN | The address of the device this container is running on. Can be an IP or sub.domain.tld.
 PROTOCOL | The protocol used to access this container. Either HTTP or HTTPS.
 ports | The port where the service will be available at.
+
+### Apps
+Add your apps by editing apps.json:
+
+    {
+	    "apps" : [
+		    {"name":"Name of app 1","url":"sub1.example.com","icon":"icon-name"},
+		    {"name":"Name of app 2","url":"sub2.example.com","icon":"icon-name"}
+	    ]
+    }
+
+Please note:
+
+ - No `http://` in the URL
+ - No `,` at the end of the last app's line
+ - Find the names  of icons to use at [Material Design Icons](https://materialdesignicons.com/)
+
+### Bookmarks
+Add your bookmarks by editing links.json:
+
+```
+{
+   "bookmarks":[
+      {
+         "category":"Category1",
+         "links":[
+            {
+               "name":"Link1",
+               "url":"http://example.com"
+            },
+            {
+               "name":"Link2",
+               "url":"http://example.com"
+            }
+         ]
+      },
+      {
+         "category":"Category2",
+         "links":[
+            {
+               "name":"Link1",
+               "url":"http://example.com"
+            },
+            {
+               "name":"Link2",
+               "url":"http://example.com"
+            }
+         ]
+      }
+   ]
+}
+```
+Add names for the categories you wish to define and add the bookmarks for each category.
+
+Please note:
+
+ - No `http://` in the URL
+ - No `,` at the end of the last bookmark in a category and at the end of the last category
 
 ## User / Group Identifiers
 
