@@ -17,7 +17,7 @@ $DESCRIPTION
 
 ---
 
-Creates a Container which runs [$CREATOR_USERNAME's](https://github.com/$CREATOR_USERNAME) [$CREATOR_REPONAME](https://github.com/$CREATOR_USERNAME/$CREATOR_REPONAME), with [$BASE_IMAGE](https://hub.docker.com/r/$BASE_IMAGE) as the base image, as seen on $EXAMPLE_SITE_LINK.
+Creates a Container which runs [$CREATOR_USERNAME2's](https://github.com/$CREATOR_USERNAME2) [$CREATOR_REPONAME2](https://github.com/$CREATOR_USERNAME2/$CREATOR_REPONAME2), a fork of [$CREATOR_USERNAME1's](https://github.com/$CREATOR_USERNAME1) [$CREATOR_REPONAME1](https://github.com/$CREATOR_USERNAME1/$CREATOR_REPONAME1) with [$BASE_IMAGE](https://hub.docker.com/r/$BASE_IMAGE) as the base image.
 
 The [$BASE_IMAGE](https://hub.docker.com/r/$BASE_IMAGE) image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
 Using this image allows us to use the same user/group ids in the container as on the host, making file transfers much easier
@@ -65,6 +65,62 @@ PGID | for GroupID
 DOMAIN | The address of the device this container is running on. Can be an IP or sub.domain.tld.
 PROTOCOL | The protocol used to access this container. Either HTTP or HTTPS.
 ports | The port where the service will be available at.
+
+### Apps
+Add your apps by editing apps.json:
+
+    {
+	    "apps" : [
+		    {"name":"Name of app 1","hostname":"sub1.example.com","port":80,"href":"https://sub1.example.com" ,"icon":"icon-name"},
+		    {"name":"Name of app 2","hostname":"sub2.example.com""port":8080,"href":"https://sub1.example.com" ,"icon":"icon-name"}
+	    ]
+    }
+
+Please note:
+
+ - No `,` at the end of the last app's line
+ - Find the names  of icons to use at [Material Design Icons](https://materialdesignicons.com/)
+
+### Bookmarks
+Add your bookmarks by editing links.json:
+
+```
+{
+   "bookmarks":[
+      {
+         "category":"Category1",
+         "links":[
+            {
+               "name":"Link1",
+               "url":"http://example.com"
+            },
+            {
+               "name":"Link2",
+               "url":"http://example.com"
+            }
+         ]
+      },
+      {
+         "category":"Category2",
+         "links":[
+            {
+               "name":"Link1",
+               "url":"http://example.com"
+            },
+            {
+               "name":"Link2",
+               "url":"http://example.com"
+            }
+         ]
+      }
+   ]
+}
+```
+Add names for the categories you wish to define and add the bookmarks for each category.
+
+Please note:
+
+ - No `,` at the end of the last bookmark in a category and at the end of the last category
 
 ## User / Group Identifiers
 
