@@ -1,3 +1,6 @@
+# DEPRECATED! USE [App-Collection on GitHub](https://github.com/Griefed/docker-App-Collection) / [App-Collection of DockerHub](https://hub.docker.com/r/griefed/app-collection) INSTEAD!
+
+
 [![docker-SUI/tree/lsiobase/nginx-dashboard](https://i.griefed.de/images/2020/11/19/docker-SUI_Dashboard_header.png)](https://github.com/Griefed/docker-SUI/tree/lsiobase/nginx-dashboard)
 
 ---
