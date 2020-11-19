@@ -71,14 +71,13 @@ Add your apps by editing apps.json:
 
     {
 	    "apps" : [
-		    {"name":"Name of app 1","url":"sub1.example.com","icon":"icon-name"},
-		    {"name":"Name of app 2","url":"sub2.example.com","icon":"icon-name"}
+		    {"name":"Name of app 1","hostname":"sub1.example.com","port":80,"href":"https://sub1.example.com" ,"icon":"icon-name"},
+		    {"name":"Name of app 2","hostname":"sub2.example.com""port":8080,"href":"https://sub1.example.com" ,"icon":"icon-name"}
 	    ]
     }
 
 Please note:
 
- - No `http://` in the URL
  - No `,` at the end of the last app's line
  - Find the names  of icons to use at [Material Design Icons](https://materialdesignicons.com/)
 
