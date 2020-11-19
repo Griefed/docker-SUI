@@ -13,7 +13,7 @@ docker-SUI/tree/lsiobase/nginx-dashboard
 
 A startpage for your server and / or new tab page as well as a status display for configured apps
 
-[![](https://i.griefed.de/images/2020/11/18/docker-SUI_screenshot.png)](https://github.com//)
+[![sui-dashboard-status](https://i.griefed.de/images/2020/11/19/docker-SUI_Dashboard_screenshot.png)](https://github.com/ThreadR-r/sui-dashboard-status)
 
 ---
 
