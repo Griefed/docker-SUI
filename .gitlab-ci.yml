@@ -56,4 +56,3 @@ publish:
     - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD $DOCKER_REGISTRY
     - docker build --network host --tag $DOCKER_USER/$DOCKER_REPO:arm .
     - docker push $DOCKER_USER/$DOCKER_REPO:arm
-    - docker system prune --all --force
