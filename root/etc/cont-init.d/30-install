@@ -1,24 +1,16 @@
 #!/usr/bin/with-contenv bash
 
-if [ ! -a /config/www/sui.lock ]; then
+# SUI
+if [ ! -f /config/www/sui.lock ]; then
   echo "**** Installing SUI  ****"
   rm -f /config/www/*
   git clone \
-    https://github.com/jeroenpardon/sui.git \
-      /tmp/sui
-  rm -f \
-    /tmp/sui/docker-compose.yml \
-    /tmp/sui/Dockerfile \
-    /tmp/sui/License.md \
-    /tmp/sui/apps.json \
-    /tmp/sui/links.json \
-    /tmp/sui/index.html \
-  rm -Rf /tmp/sui/.git
-  cp -Rf \
-    /tmp/sui/. \
-    /config/www/
+    https://github.com/ThreadR-r/sui-dashboard-status.git \
+      /config/www
   rm -Rf /tmp/sui
   touch /config/www/sui.lock
+else
+  echo "**** SUI already installed, skipping  ****"
 fi
 
 # Permission Stuffs

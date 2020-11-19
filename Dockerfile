@@ -5,7 +5,8 @@ LABEL maintainer="Griefed <griefed@griefed.de>"
 RUN \
     echo "**** Install dependencies, build tools and stuff ****" && \
     apk add --no-cache \
-      git && \
+      git \
+      python3 && \
     echo "**** Cleanup ****" && \
     rm -rf \
       /root/.cache \
