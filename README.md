@@ -6,8 +6,8 @@
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/griefed/sui-dashboard?label=Image%20size&sort=date&style=flat-square)](https://hub.docker.com/repository/docker/griefed/sui-dashboard)
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/griefed/sui-dashboard?label=Docker%20build&style=flat-square)](https://hub.docker.com/repository/docker/griefed/sui-dashboard)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/griefed/sui-dashboard?label=Docker%20build&style=flat-square)](https://hub.docker.com/repository/docker/griefed/sui-dashboard)
-[![GitHub Repo stars](https://img.shields.io/github/stars/Griefed/docker-SUI/tree/lsiobase/nginx-dashboard?label=GitHub%20Stars&style=social)](https://github.com/Griefed/docker-SUI/tree/lsiobase/nginx-dashboard)
-[![GitHub forks](https://img.shields.io/github/forks/Griefed/docker-SUI/tree/lsiobase/nginx-dashboard?label=GitHub%20Forks&style=social)](https://github.com/Griefed/docker-SUI/tree/lsiobase/nginx-dashboard)
+[![GitHub Repo stars](https://img.shields.io/github/stars/Griefed/docker-SUI?label=GitHub%20Stars&style=social)](https://github.com/Griefed/docker-SUI)
+[![GitHub forks](https://img.shields.io/github/forks/Griefed/docker-SUI?label=GitHub%20Forks&style=social)](https://github.com/Griefed/docker-SUI)
 
 docker-SUI/tree/lsiobase/nginx-dashboard
 

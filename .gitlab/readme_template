@@ -6,8 +6,8 @@
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/griefed/$DOCKERHUB_REPONAME?label=Image%20size&sort=date&style=flat-square)](https://hub.docker.com/repository/docker/griefed/$DOCKERHUB_REPONAME)
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/griefed/$DOCKERHUB_REPONAME?label=Docker%20build&style=flat-square)](https://hub.docker.com/repository/docker/griefed/$DOCKERHUB_REPONAME)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/griefed/$DOCKERHUB_REPONAME?label=Docker%20build&style=flat-square)](https://hub.docker.com/repository/docker/griefed/$DOCKERHUB_REPONAME)
-[![GitHub Repo stars](https://img.shields.io/github/stars/Griefed/$GITHUB_REPONAME?label=GitHub%20Stars&style=social)](https://github.com/Griefed/$GITHUB_REPONAME)
-[![GitHub forks](https://img.shields.io/github/forks/Griefed/$GITHUB_REPONAME?label=GitHub%20Forks&style=social)](https://github.com/Griefed/$GITHUB_REPONAME)
+[![GitHub Repo stars](https://img.shields.io/github/stars/Griefed/$GITHUB_REPONAME?label=GitHub%20Stars&style=social)](https://github.com/Griefed/$GITHUB_REPONAME2)
+[![GitHub forks](https://img.shields.io/github/forks/Griefed/$GITHUB_REPONAME?label=GitHub%20Forks&style=social)](https://github.com/Griefed/$GITHUB_REPONAME2)
 
 $GITHUB_REPONAME
 
