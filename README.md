@@ -4,7 +4,6 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/griefed/sui?style=flat-square)](https://hub.docker.com/repository/docker/griefed/sui)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/griefed/sui?label=Image%20size&sort=date&style=flat-square)](https://hub.docker.com/repository/docker/griefed/sui)
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/griefed/sui?label=Docker%20build&style=flat-square)](https://hub.docker.com/repository/docker/griefed/sui)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/griefed/sui?label=Docker%20build&style=flat-square)](https://hub.docker.com/repository/docker/griefed/sui)
 [![GitHub Repo stars](https://img.shields.io/github/stars/Griefed/docker-SUI?label=GitHub%20Stars&style=social)](https://github.com/Griefed/docker-SUI)
 [![GitHub forks](https://img.shields.io/github/forks/Griefed/docker-SUI?label=GitHub%20Forks&style=social)](https://github.com/Griefed/docker-SUI)
