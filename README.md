@@ -22,37 +22,58 @@ Creates a Container which runs [jeroenpardon's](https://github.com/jeroenpardon)
 The [lsiobase/nginx](https://hub.docker.com/r/lsiobase/nginx) image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
 Using this image allows us to use the same user/group ids in the container as on the host, making file transfers much easier
 
-## Deployment
+# Deployment
 
-### Pre-built images
+Tags | Description
+-----|------------
+`latest` | Using the `latest` tag will pull the latest image for linux/amd64,linux/arm/v7,linux/arm64.
+`develop` | The latest image of, if existent, the in-dev version of this container. Use at your own risk!
+
+Using GitHub Workflows, images for this container are multi-arch. Simply pulling `:latest` should retrieve the correct image for your architecture.
+Images are available for linux/amd64,linux/arm/v7,linux/arm64.
+
+## Pre-built images
+
+Using docker-compose:
 
 ```docker-compose.yml
-version: '3.6'
+version: "2"
 services:
   sui:
+    image: griefed/sui:latest
     container_name: sui
-    image: griefed/sui
     restart: unless-stopped
-    volumes:
-      - ./path/to/config:/config
     environment:
-      - TZ=Europe/Berlin
-      - PUID=1000  # User ID
-      - PGID=1000  # Group ID
-      - DOMAIN=www.example.com
-      - PROTOCOL=https
+      - TZ=Europe/Berlin # Timezone
+      - PUID=1000 # User ID
+      - PROTOCOL=https # The protocol used to access this container. Either HTTP or HTTPS.
+      - PGID=1000 # Group ID
+      - DOMAIN=www.example.com # The address of the device this container is running on. Can be an IP or sub.domain.tld.
+    volumes:
+      - /host/path/to/config:/config # Contains all application data and base-image config files
     ports:
-      - 80:80
-      - 443:443
+      - 443:443/tcp # https
+      - 80:80/tcp # http
 ```
 
-## Raspberry Pi
+Using CLI:
 
-To run this container on a Raspberry Pi, use the `arm`-tag. I've tested it on a Raspberry Pi 3B.
+```bash
+docker create \
+  --name=sui \
+  -e TZ=Europe/Berlin `# Timezone` \
+  -e PUID=1000 `# User ID` \
+  -e PROTOCOL=https `# The protocol used to access this container. Either HTTP or HTTPS.` \
+  -e PGID=1000 `# Group ID` \
+  -e DOMAIN=www.example.com `# The address of the device this container is running on. Can be an IP or sub.domain.tld.` \
+  -v /host/path/to/config:/config `# Contains all application data and base-image config files` \
+  -p 443:443/tcp `# https` \
+  -p 80:80/tcp `# http` \
+  --restart unless-stopped \
+  griefed/sui:latest
+```
 
-`griefed/sui:arm`
-
-## Configuration
+# Configuration
 
 Configuration | Explanation
 ------------ | -------------
@@ -66,7 +87,7 @@ DOMAIN | The address of the device this container is running on. Can be an IP or
 PROTOCOL | The protocol used to access this container. Either HTTP or HTTPS.
 ports | The port where the service will be available at.
 
-### Apps
+## Apps
 Add your apps by editing apps.json:
 
     {
@@ -82,7 +103,7 @@ Please note:
  - No `,` at the end of the last app's line
  - Find the names  of icons to use at [Material Design Icons](https://materialdesignicons.com/)
 
-### Bookmarks
+## Bookmarks
 Add your bookmarks by editing links.json:
 
 ```
@@ -137,11 +158,11 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
     uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
 ```
 
-### Building the image yourself
+# Building the image yourself
 
 Use the [Dockerfile](https://github.com/Griefed/docker-SUI/Dockerfile) to build the image yourself, in case you want to make any changes to it
 
-#### docker-compose.yml
+Using docker-compose:
 
 ```docker-compose.yml
 version: '3.6'
