@@ -33,7 +33,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.compute_tag.outputs.next_tag }}
-          release_name: "App-Collection"
+          release_name: "SUI"
           body: |
             Automatic release of version: **${{ steps.compute_tag.outputs.next_tag }}**
             **Changes in this release:**
