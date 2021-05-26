@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-if [ ! -a /config/www/sui.lock ]; then
+if [ ! -f /config/www/sui.lock ]; then
   echo "**** Installing SUI  ****"
   rm -Rf /config/www/*
   git clone \
