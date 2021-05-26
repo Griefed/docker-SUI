@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-if [ ! -a /config/www/apps.json ]; then
+if [ ! -f /config/www/apps.json ]; then
   cp -f \
     /defaults/apps.json \
     /config/www/apps.json
@@ -10,14 +10,14 @@ if [ ! -a /config/www/apps.json ]; then
 fi
 
 
-if [ ! -a /config/www/links.json ]; then
+if [ ! -f /config/www/links.json ]; then
   cp -f \
     /defaults/links.json \
     /config/www/links.json
 fi
 
 
-if [ ! -a /config/www/index.html ]; then
+if [ ! -f /config/www/index.html ]; then
   cp -f \
     /defaults/index.html \
     /config/www/index.html
