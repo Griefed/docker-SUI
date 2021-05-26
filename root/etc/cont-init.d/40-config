@@ -1,29 +1,35 @@
 #!/usr/bin/with-contenv bash
 
-if [ ! -a /config/www/apps.json ]; then
+if [ ! -f /config/www/apps.json ]; then
   cp -f \
     /defaults/apps.json \
     /config/www/apps.json
   sed -i \
     "s/DOMAIN/${DOMAIN}/g" \
       /config/www/apps.json
+else
+  echo "**** apps.json-file found. Skipping installation... ****"
 fi
 
 
-if [ ! -a /config/www/links.json ]; then
+if [ ! -f /config/www/links.json ]; then
   cp -f \
     /defaults/links.json \
     /config/www/links.json
+else
+  echo "**** links.json-file found. Skipping installation... ****"
 fi
 
 
-if [ ! -a /config/www/index.html ]; then
+if [ ! -f /config/www/index.html ]; then
   cp -f \
     /defaults/index.html \
     /config/www/index.html
   sed -i \
     "s/PROTOCOL/${PROTOCOL}/g" \
       /config/www/index.html
+else
+  echo "**** index.html-file found. Skipping installation... ****"
 fi
 
 # Permissions Stuffs
