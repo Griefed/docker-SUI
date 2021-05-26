@@ -19,6 +19,8 @@ if [ ! -f /config/www/sui.lock ]; then
     /config/www/
   rm -Rf /tmp/sui
   touch /config/www/sui.lock
+else
+  echo "**** lock-file found. Skipping installation... ****"
 fi
 
 # Permission Stuffs
