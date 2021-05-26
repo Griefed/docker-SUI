@@ -2,7 +2,7 @@
 
 if [ ! -a /config/www/sui.lock ]; then
   echo "**** Installing SUI  ****"
-  rm -f /config/www/*
+  rm -Rf /config/www/*
   git clone \
     https://github.com/jeroenpardon/sui.git \
       /tmp/sui
@@ -12,7 +12,7 @@ if [ ! -a /config/www/sui.lock ]; then
     /tmp/sui/License.md \
     /tmp/sui/apps.json \
     /tmp/sui/links.json \
-    /tmp/sui/index.html \
+    /tmp/sui/index.html
   rm -Rf /tmp/sui/.git
   cp -Rf \
     /tmp/sui/. \
