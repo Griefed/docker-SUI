@@ -23,6 +23,8 @@
 
 [![sui](https://i.griefed.de/images/2020/11/18/docker-SUI_screenshot.png)](https://github.com/jeroenpardon/sui)
 
+[[_TOC_]]
+
 ---
 
 Creates a Container which runs [jeroenpardon's](https://github.com/jeroenpardon) [sui](https://github.com/jeroenpardon/sui), with [lsiobase/nginx](https://hub.docker.com/r/lsiobase/nginx) as the base image, as seen on https://imgur.com/a/FDVRIyw.
